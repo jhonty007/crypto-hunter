@@ -1,0 +1,92 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  border-bottom: 2px solid black;
+  background-color: blue;
+  background: transparent;
+  color: #ddd;
+}
+.navbar ul{
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.navbar .logo{
+  width: max(12vw,120px);
+}
+.navbar li{
+  cursor: pointer;
+}
+
+.nav-right{
+  display: flex;
+  align-items: center;
+  gap: max(1vw,12px);
+}
+.nav-right select{
+  padding: 5px 8px;
+  border-radius: 6px;
+  background: transparent;
+  color: red;
+  font-size: 15px;
+  padding: 10px 25px;
+  
+}
+.nav-right option{
+  background-color: black;
+  font-size: 15px;
+  
+}
+.nav-right button{
+ display: flex;
+ gap: 10px;
+ align-items:center;
+ padding: 8px 10px;
+ border-radius: 10px;
+ font-size: 20px;
+ /* background: white; */
+ border: 2px solid black;
+ cursor: pointer;
+ background: black;
+ color: white;
+}
+.navbar button img{
+  width: 13px;
+}
+.navbar ul li:hover{
+  font-size: 20px;
+  color: red;
+  transition: ease-in-out;
+  text-decoration: underline;
+}
+
+/* to make the navbar responsive */
+
+@media(max-width:900px)
+{
+  .navbar{
+    padding: 20px 8%;
+  }
+  .navbar button{
+    gap: 8px;
+    padding:8px 18px;
+    font-size: 14px;
+  }
+}
+
+@media(max-width:800px)
+{
+  .navbar{
+    padding: 15px 5%;
+  }
+  .navbar button{
+    gap: 8px;
+    padding:5px 10px;
+    font-size: 12px;
+  }
+  .navbar ul{
+    display: none;
+  }
+}
